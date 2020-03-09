@@ -1,0 +1,13 @@
+<p>
+  <%= link_to 'На главную', root_path %>
+</p>
+
+<p id="notice"><%= notice %></p>
+<h1>Мои термины</h1>
+
+<div class="col-md-12">
+  <div class="buffer-top">
+    <%= link_to 'Добавить термин', new_project_termin_path(@project, @termin) %>
+    <%= render partial: 'projects/project', collection: @termins %>
+  </div>
+</div>

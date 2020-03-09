@@ -1,0 +1,34 @@
+<div class="col-md-8">
+  <%= form_for([@project, @termin]) do |f| %>
+    <%#= render partial: 'partials/form_errors', locals: { model: @termin } %>
+
+    <div class="container">
+      <div class="row">
+        <div class="form-group col-xs-4">
+          <p><%= f.label :name, 'Значение', class: 'form-label' %></p>
+          <p><%= f.text_field :name, class: 'form-control', required: true %></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-xs-4">
+          <p><%= f.label :translation, 'Перевод', class: 'form-label' %></p>
+          <p><%= f.text_field :translation, class: 'form-control', required: true %></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-xs-4">
+          <p><%= f.label :example, 'Пример(ы)', class: 'form-label' %></p>
+          <p><%= f.text_field :example, class: 'form-control' %></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-xs-4">
+          <p><%= f.submit 'Create', class: 'btn btn-info' %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

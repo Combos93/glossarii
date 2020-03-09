@@ -1,0 +1,14 @@
+<h1>
+  <p><%= project.name %></p>
+</h1>
+<h2>
+  <p><%= project.translation %></p>
+</h2>
+<%  %>
+<% if project.example.present? %>
+  <h2>
+    <p><%= project.example %></p>
+  </h2>
+<% end %>
+<%= link_to 'Добавить термин', new_project_termin_path(@project, @termin) %> |
+<%= link_to 'Вернуться назад', projects_path %>

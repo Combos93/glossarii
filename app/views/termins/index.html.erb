@@ -1,0 +1,13 @@
+<div class="col-md-12">
+  <h1>Термины</h1>
+
+  <div class="buffer-top">
+    <%= link_to "Новый термин", new_project_termin_path, class: 'btn btn-primary' %>
+  </div>
+
+  <div class="buffer-top">
+    <% @termins.each do |task| %>
+      <%= render partial: 'tasks/task', object: @task %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyString
+  translation: MyString
+  example: MyString
+  project_id: one
+
+two:
+  word: MyString
+  translation: MyString
+  example: MyString
+  project_id: two
